@@ -1,0 +1,64 @@
+.card {
+  width: 40%;
+  max-height: 40%;
+  margin: 40px auto;
+}
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+}
+.form-field {
+  width: 100%;
+}
+a {
+  padding: 10px;
+  color: #5f6368;
+  font-size: 16px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+a:hover {
+  color: #4285f4;
+}
+textarea {
+  resize: vertical;
+  height: 100px;
+  overflow: auto;
+}
+.footer {
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-around;
+}
+.close {
+  position: relative;
+  left: 101%;
+  top: 35px;
+  z-index: 1;
+}
+
+.file-upload {
+  cursor: pointer;
+  text-align: center;
+  color: #5f6368;
+}
+.file-upload:hover {
+  color: black;
+}
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.inputfile + label {
+  font-size: 1.25em;
+  font-weight: 700;
+  color: white;
+  background-color: black;
+  display: inline-block;
+}

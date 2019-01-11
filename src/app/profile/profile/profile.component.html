@@ -1,0 +1,20 @@
+<mat-card class="card" *ngIf="user | async as userData">
+    <div class="wrapper-img">
+      <img mat-card-image class="img" src="{{userData.avatar}}">
+    </div>
+    <mat-card-content>
+    <div *ngIf="show" class="input">
+      <div class="file-upload">
+        <label for="file">Choose a file</label> 
+      <input type="file" name="file" (change)="loadImg($event)" multiple class="inputfile" id="file">
+    </div>
+    </div>
+    <div class="title-content">
+    <span class="title">{{userData.name}}</span>
+    </div>
+  </mat-card-content>
+  <mat-card-actions class="btn">
+    <a class="a-link" [routerLink]="['/posts/all']">Go to posts</a>
+    <a class="btn" (click)="editAvatar()">Edit</a>
+  </mat-card-actions>
+</mat-card>

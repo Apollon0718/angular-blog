@@ -1,0 +1,11 @@
+.content {
+  margin: 40px 0 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  text-align: center;
+  font-weight: 300;
+}

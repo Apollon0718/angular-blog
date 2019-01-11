@@ -1,0 +1,16 @@
+<header class="toolbar-wrapper">
+  <mat-toolbar class="toolbar">
+    <span class="fill-remaining-space" [routerLink]="['posts/all']">Blog</span>
+    
+      <h3 [routerLink]="['profile/profile']" class="icon">{{(tokenService.profileSubject | async)?.name}}</h3>
+    
+    <button mat-icon-button class="icon" [routerLink]="['profile/profile']" routerLinkActive="active">
+      <mat-icon>tag_faces</mat-icon>
+    </button>
+    <a class="auth-link"  routerLinkActive="active" (click)="goToLogin()" [routerLink]="['auth/login']">Sign
+      In</a>
+      <button mat-icon-button class="icon" [routerLink]="['posts/all']" (click)="logOut()">
+        <mat-icon>exit_to_app</mat-icon>
+      </button>
+  </mat-toolbar>
+</header>

@@ -1,0 +1,26 @@
+<div class="card">
+  <form [formGroup]="createPost" (ngSubmit)="savePost()">
+    <mat-card class="container">
+      <mat-card-content>
+          <mat-form-field class="form-field">
+              <input formControlName="title" matInput placeholder="Enter title">
+            </mat-form-field>
+        <mat-form-field class="form-field">
+          <textarea  formControlName="body" matInput placeholder="Enter your post">
+        {{post?.body}}</textarea>
+        </mat-form-field>
+        <img mat-card-image src="{{post?.image}}">
+        <div class="file-upload">
+        <label for="file">Choose a file</label> 
+        <input type="file" name="file" (change)="loadImg($event)" multiple class="inputfile" id="file">
+        <a mat-button type="button" *ngIf="!newPost" (click)="deleteImg()">Delete img</a>
+        </div>
+      </mat-card-content>
+      <mat-card-actions class="footer">
+        <a  [routerLink]="['/posts/my-post']" (click)="savePost()" class="save">Save</a>
+        <a  type="button" color="primary" [routerLink]="['/posts/all']">All posts</a>
+        <a  type="button" color="primary" *ngIf="!newPost" [routerLink]="['/posts/all']" (click)="deletePost()" class="del">Delete</a>
+      </mat-card-actions>
+    </mat-card>
+  </form>
+</div>

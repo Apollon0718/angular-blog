@@ -1,0 +1,35 @@
+.card {
+  margin: 50px auto;
+  max-width: 400px;
+  max-height: 500px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.container,
+.card-content {
+  display: flex;
+  flex-direction: column;
+}
+.footer {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+.mat-form-field {
+  margin-top: 20px;
+}
+.name {
+  text-align: center;
+  font: 500 20px 'Cinzel', serif;
+  color: #4285f4;
+}
+p {
+  text-align: center;
+}
+.btn {
+  margin-right: 20px;
+  border-radius: 50px;
+  font-size: 16px;
+  background-color: #4285f4;
+}

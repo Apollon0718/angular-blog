@@ -1,0 +1,29 @@
+<mat-drawer-container class="container" autosize>
+  <mat-drawer #drawer class="wrapper" mode="side">
+    <mat-list>
+      <mat-list-item class="group" routerLinkActive="active" [routerLink]="['posts/my-post']">
+        <mat-icon class="mat-icon">home</mat-icon>
+        <a class="link">Home</a>
+      </mat-list-item>
+      <mat-list-item class="group" routerLinkActive="active" [routerLink]="['posts/all']">
+        <mat-icon class="mat-icon">dashboard</mat-icon>
+        <a>Posts</a>
+      </mat-list-item>
+      <mat-list-item class="group" routerLinkActive="active" [routerLink]="['posts/detail']">
+        <mat-icon class="mat-icon">create</mat-icon>
+        <a>Add post</a>
+      </mat-list-item>
+      <mat-list-item class="group" [routerLink]="['profile/profile']" routerLinkActive="active">
+        <mat-icon class="mat-icon">person</mat-icon>
+        <a>Profile</a>
+      </mat-list-item>
+    </mat-list>
+  </mat-drawer>
+  <div>
+    <button class="icon" mat-icon-button (click)="drawer.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </div>
+  <app-header></app-header>
+  <router-outlet></router-outlet>
+</mat-drawer-container>

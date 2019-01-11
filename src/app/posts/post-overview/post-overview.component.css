@@ -1,0 +1,30 @@
+.container {
+    max-width: 50%;
+    max-height: 60%;
+    margin: 50px auto;
+}
+.card {
+    max-height: 60%;
+}
+.text {
+  font: 16px/20px 'Roboto', sans-serif;
+  letter-spacing: .1px;
+  padding: 10px;
+}
+.img-container {
+    max-height: 550px;
+  }
+img {
+    max-height: 550px;
+    overflow: hidden;
+    border-radius: 3px;
+  }
+  a {
+    font-size: 14px;
+    margin: 20px;
+    color: #5f6368;
+    cursor: pointer;
+  }
+  a:hover {
+    color: #4285f4;
+  }

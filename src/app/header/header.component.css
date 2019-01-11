@@ -1,0 +1,45 @@
+.toolbar-wrapper {
+  position: relative;
+   top: 0;
+   left: 0;
+   right: 0;
+   box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.12), 0 1px 18px 0 rgba(0,0,0,.12);
+}
+h3 {
+  color: #5f6368;
+  font: 300 18px 'Cinzel', serif;
+}
+
+.icon {
+  color: #5f6368;
+  margin: 15px 20px;
+}
+.icon:hover {
+  color: #4285f4;
+}
+.icon:active {
+  border: none;
+}
+.fill-remaining-space {
+  flex: 1 1 auto;
+  margin-left: 70px;
+  color: #5f6368;
+  font: 600 30px 'Cinzel', serif;
+}
+.auth-link {
+  cursor: pointer;
+  padding: 5px 7px;
+  margin-right: 20px;
+  color:  #5f6368;
+  border-radius: 50px;
+  font-size: 16px;
+}
+.active {
+  background: #4285f4;
+  border: 1px solid #4285f4;
+  color: white;
+}
+
+
+
+

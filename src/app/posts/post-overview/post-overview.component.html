@@ -1,0 +1,21 @@
+<div class="container" *ngIf="(post | async) as postData">
+  <mat-card class="card">
+    <mat-card-header>
+    </mat-card-header>
+    <mat-card-content class="card-content">
+      <div class="img-container">
+        <img mat-card-image src="{{ postData.image }}">
+      </div>
+      <div>
+        <h3>{{postData.title}}</h3>
+        <p class="text">
+          {{ postData.body }}
+        </p>
+      </div>
+    </mat-card-content>
+    <mat-card-actions class="footer">
+      <a color="primary" [routerLink]="['/posts/all']">Back</a>
+      <a *appCurrentUser="postData.author.id" color="primary" [routerLink]="['/posts/detail', postData.id]">Edit</a>
+    </mat-card-actions>
+  </mat-card>
+</div>

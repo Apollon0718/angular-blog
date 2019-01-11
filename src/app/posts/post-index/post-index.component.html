@@ -1,0 +1,6 @@
+<h1 *ngIf="!myPost">Today's Must Reads</h1>
+<h1 *ngIf="myPost">My posts</h1>
+<div class="content">
+  <app-post [post]="post" *ngFor="let post of posts"></app-post>
+</div>
+  
